@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My gallery</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <center>
+    <img class="d" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b4347494-bc1a-4a9d-87af-8b3dcba44824/dccakw7-85edd7da-ac27-40f8-9848-fcc2e94db738.png/v1/fill/w_1499,h_533,strp/custom__the_avengers___logo_original___3d_02___png_by_itstotallytoxic_dccakw7-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD0xMDY3IiwicGF0aCI6IlwvZlwvYjQzNDc0OTQtYmMxYS00YTlkLTg3YWYtOGIzZGNiYTQ0ODI0XC9kY2Nha3c3LTg1ZWRkN2RhLWFjMjctNDBmOC05ODQ4LWZjYzJlOTRkYjczOC5wbmciLCJ3aWR0aCI6Ijw9MzAwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.S7LhKDGK2RNNMKxBqRFJF0M3yfSXjwITVlGLhxrnYw8">
+        </center>
+    <style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 105%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+</style>
+<center>
+<h1>Grid gallery</h1>
+</center>
+<div class="row"> 
+  <div class="column">
+    <img src="https://cf-images.us-east-1.prod.boltdns.net/v1/static/5359769168001/0a823cb0-01a9-4835-a348-c64187783ccb/d37cb96c-805c-4aa2-9f2f-e62d9eb814c7/1280x720/match/image.jpg">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ55-lx6RUaAOxuZBgqbk9lqvvWtUBWGb-NlA&usqp=CAU">
+    <img src="https://i.pinimg.com/originals/92/bd/21/92bd210a63ad6d3d939e4d6a6f97709c.jpg">
+    <img src="https://www.indiewire.com/wp-content/uploads/2019/05/avengers-endgame-thor-chris-hemsworth-1166899-1280x0.jpeg">
+  </div>
+  <div class="column">
+    <img src="https://cms.qz.com/wp-content/uploads/2016/05/black-panther-marvel-e1462460773100.jpg?quality=75&strip=all&w=900&h=900&crop=1">
+    <img src="https://sm.mashable.com/t/mashable_sea/feature/t/the-thanos/the-thanos-snap-for-real-lets-remove-humans-from-half-of-ear_bq2q.h720.jpg">
+    <img src="https://cnet1.cbsistatic.com/img/n7UdKZYMfW9eu_bgxS5tyBIRpVY=/940x0/2018/11/14/424a7378-fa4e-412c-9ef9-751e81e648fa/gamora.jpg">
+    <img src="https://deadline.com/wp-content/uploads/2016/10/doctor-strange2.jpg?w=640">
+  </div>  
+</div>
+<div class="container">
+    <section>
+        <center>
+            <h1>Slide Gallery</h1>
+        </center>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel"> 
+            
+            <!-- Indicators -->
+            
+           <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
+      <li data-target="#myCarousel" data-slide-to="5"></li>
+      <li data-target="#myCarousel" data-slide-to="6"></li>
+      <li data-target="#myCarousel" data-slide-to="7"></li>
+    </ol> 
+            <!-- Wrapper for slides -->
+            
+            <div class="carousel-inner">
+                <div class="item active">
+                    <center>
+                     <img src="https://cf-images.us-east-1.prod.boltdns.net/v1/static/5359769168001/0a823cb0-01a9-4835-a348-c64187783ccb/d37cb96c-805c-4aa2-9f2f-e62d9eb814c7/1280x720/match/image.jpg" style="width:100%;">
+                     <div class="carousel-caption">
+                       <p>Captain America</p>
+                        </div>
+                    </center>
+                </div>
+                <div class="item">
+                 <center>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ55-lx6RUaAOxuZBgqbk9lqvvWtUBWGb-NlA&usqp=CAU" style="width:100%;">
+                     <div class="carousel-caption">
+                     <p>Iron-man</p>
+                     </div>
+                 </center>
+                </div>
+                <div class="item">
+                 <center>
+                    <img src="https://i.pinimg.com/originals/92/bd/21/92bd210a63ad6d3d939e4d6a6f97709c.jpg" style="width:100%;">
+                     <div class="carousel-caption">
+                     <p>Hulk</p>
+                     </div>
+                 </center>
+                </div>
+                <div class="item">
+                 <center>
+                    <img src="https://www.indiewire.com/wp-content/uploads/2019/05/avengers-endgame-thor-chris-hemsworth-1166899-1280x0.jpeg" style="width:100%;">
+                     <div class="carousel-caption">
+                     <p>Thor</p>
+                     </div>
+                 </center>
+                </div>
+                <div class="item">
+                 <center>
+                    <img src="https://cdn.onebauer.media/one/empire-images/articles/5c98f91a133d503e3a482676/spidey-far-from-home-crop.jpg?quality=50&width=1800&ratio=16-9&resizeStyle=aspectfill&format=jpg" style="width:100%;">
+                     <div class="carousel-caption">
+                     <p>Spider man</p>
+                     </div>
+                 </center>
+                </div>
+                <div class="item">
+                 <center>
+                    <img src="https://sm.mashable.com/t/mashable_sea/feature/t/the-thanos/the-thanos-snap-for-real-lets-remove-humans-from-half-of-ear_bq2q.h720.jpg" style="width:100%;">
+                     <div class="carousel-caption">
+                     <p>Thanos</p>
+                     </div>
+                     </center>
+                    </div>
+                     <div class="item">
+                    <center>
+                    <img src="https://cnet1.cbsistatic.com/img/n7UdKZYMfW9eu_bgxS5tyBIRpVY=/940x0/2018/11/14/424a7378-fa4e-412c-9ef9-751e81e648fa/gamora.jpg" style="width:100%;">
+                    <div class="carousel-caption">
+                     <p>Gamora</p>
+                    </div>
+                    </center>
+                </div>
+                <div class="item">
+                    <center>
+                    <img src="https://deadline.com/wp-content/uploads/2016/10/doctor-strange2.jpg?w=640" style="width:100%;">
+                        <div class="carousel-caption">
+                     <p>Dr strange</p>
+                        </div>
+                    </center>
+                </div>
+            </div>
+            <!-- Left and right controls -->
+            
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+            </a>
+           
+        </div>
+    </section>
+    </div> 
+</body>
+</html>
